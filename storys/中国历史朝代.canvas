@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"group-imperial","type":"group","x":380,"y":-50,"width":320,"height":1600,"color":"4","label":"帝制时期"},
+		{"id":"group-ancient","type":"group","x":50,"y":-50,"width":280,"height":700,"color":"1","label":"上古时期"},
+		{"id":"group-modern","type":"group","x":760,"y":-50,"width":280,"height":200,"color":"6","label":"近现代"},
+		{"id":"xia","type":"text","text":"### 夏朝\n\n**约前2070-前1600**\n\n- 中国第一个世袭制朝代\n- 大禹治水\n- 桀暴政导致灭亡","x":80,"y":0,"width":220,"height":100,"color":"1"},
+		{"id":"shang","type":"text","text":"### 商朝\n\n**约前1600-前1046**\n\n- 青铜器鼎盛时期\n- 甲骨文出现\n- 牧野之战灭亡","x":80,"y":130,"width":220,"height":100,"color":"2"},
+		{"id":"zhou","type":"text","text":"### 周朝\n\n**前1046-前256**\n\n**西周 (前1046-前771)**\n- 分封制\n- 礼乐制度\n\n**东周 (前770-前256)**\n- 春秋战国\n- 百家争鸣","x":80,"y":260,"width":220,"height":150,"color":"3"},
+		{"id":"qin","type":"text","text":"### 秦朝\n\n**前221-前207**\n\n- 统一六国\n- 建立帝制\n- 修长城、统一文字\n- 秦始皇、秦二世","x":410,"y":0,"width":260,"height":120,"color":"1"},
+		{"id":"han","type":"text","text":"### 汉朝\n\n**西汉 (前202-8)**\n\n**新朝 (8-23)**\n\n**东汉 (25-220)**\n\n- 开拓丝绸之路\n- 汉武帝推恩令\n- 罢黜百家，独尊儒术","x":410,"y":150,"width":260,"height":150,"color":"2"},
+		{"id":"republic","type":"text","text":"### 中华民国\n\n**1912-1949**\n\n- 孙中山就任临时大总统\n- 五四运动\n- 抗日战争\n- 解放战争","x":790,"y":0,"width":220,"height":100,"color":"6"},
+		{"id":"three-kingdoms","type":"text","text":"### 三国\n\n**220-280**\n\n魏、蜀、吴三足鼎立\n\n- 曹操统一北方\n- 刘备建立蜀汉\n- 孙权据守江东","x":410,"y":330,"width":260,"height":120,"color":"3"},
+		{"id":"jin-north-south","type":"text","text":"### 晋与南北朝\n\n**西晋 (265-316)**\n\n**东晋 (317-420)**\n\n**南北朝 (420-589)**\n\n- 五胡乱华\n- 民族大融合\n- 佛教兴盛","x":410,"y":480,"width":260,"height":150,"color":"5"},
+		{"id":"sui","type":"text","text":"### 隋朝\n\n**581-618**\n\n- 隋文帝统一南北\n- 开凿大运河\n- 创立科举制\n- 三征高句丽导致灭亡","x":410,"y":660,"width":260,"height":100,"color":"1"},
+		{"id":"tang","type":"text","text":"### 唐朝\n\n**618-907**\n\n- 贞观之治\n- 开元盛世\n- 诗歌黄金时代\n- 安史之乱转折\n- 中国封建社会巅峰","x":410,"y":790,"width":260,"height":150,"color":"6"},
+		{"id":"five-song","type":"text","text":"### 五代十国与宋朝\n\n**五代十国 (907-960)**\n\n**北宋 (960-1127)**\n\n**南宋 (1127-1279)**\n\n- 经济文化繁荣\n- 四大发明成熟\n- 王安石变法\n- 靖康之耻、崖山之战","x":410,"y":970,"width":260,"height":180,"color":"2"},
+		{"id":"yuan","type":"text","text":"### 元朝\n\n**1271-1368**\n\n- 忽必烈建立\n- 蒙古族统治\n- 行省制度\n- 四等人制\n- 马可·波罗来华","x":410,"y":1180,"width":260,"height":120,"color":"3"},
+		{"id":"ming","type":"text","text":"### 明朝\n\n**1368-1644**\n\n- 朱元璋建立\n- 郑和下西洋\n- 紫禁城建成\n- 王阳明心学\n- 李自成起义","x":410,"y":1330,"width":260,"height":150,"color":"4"},
+		{"id":"qing","type":"text","text":"### 清朝\n\n**1636-1912**\n\n- 康乾盛世\n- 鸦片战争\n- 洋务运动\n- 戊戌变法\n- 辛亥革命灭亡","x":410,"y":1510,"width":260,"height":150,"color":"5"},
+		{"id":"notes","type":"text","text":"## 中国历史要点\n\n### 主要特征\n\n1. **朝代更替**\n   - 内因：农民起义、权臣篡位\n   - 外因：游牧民族入侵\n\n2. **政治制度**\n   - 封建专制\n   - 中央集权\n   - 科举取士\n\n3. **文化成就**\n   - 四大发明\n   - 儒释道融合\n   - 文学艺术高峰\n\n4. **经济模式**\n   - 农业为本\n   - 重农抑商\n   - 丝绸之路贸易","x":1100,"y":0,"width":300,"height":400,"color":"5"},
+		{"id":"timeline-note","type":"text","text":"## 时间轴说明\n\n- 夏商周：奴隶社会向封建社会过渡\n- 秦汉：大一统帝国建立\n- 魏晋南北朝：分裂与融合\n- 隋唐：鼎盛时期\n- 宋元：经济文化繁荣\n- 明清：封建社会末期\n\n总计约4000年文明史","x":1100,"y":450,"width":300,"height":200,"color":"4"},
+		{"id":"title","type":"text","text":"# 中国历史朝代时间线\n\n## 从夏朝到清朝 (约公元前2070年 - 1912年)","x":340,"y":-360,"width":400,"height":80,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"title","fromSide":"bottom","toNode":"xia","toSide":"top","color":"5"},
+		{"id":"e2","fromNode":"xia","fromSide":"bottom","toNode":"shang","toSide":"top"},
+		{"id":"e3","fromNode":"shang","fromSide":"bottom","toNode":"zhou","toSide":"top"},
+		{"id":"e4","fromNode":"zhou","fromSide":"bottom","toNode":"qin","toSide":"top"},
+		{"id":"e5","fromNode":"qin","fromSide":"bottom","toNode":"han","toSide":"top"},
+		{"id":"e6","fromNode":"han","fromSide":"bottom","toNode":"three-kingdoms","toSide":"top"},
+		{"id":"e7","fromNode":"three-kingdoms","fromSide":"bottom","toNode":"jin-north-south","toSide":"top"},
+		{"id":"e8","fromNode":"jin-north-south","fromSide":"bottom","toNode":"sui","toSide":"top"},
+		{"id":"e9","fromNode":"sui","fromSide":"bottom","toNode":"tang","toSide":"top"},
+		{"id":"e10","fromNode":"tang","fromSide":"bottom","toNode":"five-song","toSide":"top"},
+		{"id":"e11","fromNode":"five-song","fromSide":"bottom","toNode":"yuan","toSide":"top"},
+		{"id":"e12","fromNode":"yuan","fromSide":"bottom","toNode":"ming","toSide":"top"},
+		{"id":"e13","fromNode":"ming","fromSide":"bottom","toNode":"qing","toSide":"top"},
+		{"id":"e14","fromNode":"qing","fromSide":"right","toNode":"republic","toSide":"left"},
+		{"id":"e15","fromNode":"notes","fromSide":"left","toNode":"qing","toSide":"right","label":"历史总结"}
+	]
+}
