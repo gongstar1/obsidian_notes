@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 600,
+      "y": -180,
+      "width": 500,
+      "height": 100,
+      "text": "# AI 技术栈架构图\n\n## 从基础模型到智能应用的完整技术体系",
+      "color": "5"
+    },
+    {
+      "id": "layer-llm",
+      "type": "group",
+      "x": 100,
+      "y": 0,
+      "width": 1400,
+      "height": 300,
+      "label": "第1层: LLM (基础大模型层)",
+      "color": "1"
+    },
+    {
+      "id": "llm-desc",
+      "type": "text",
+      "x": 120,
+      "y": 30,
+      "width": 350,
+      "height": 250,
+      "text": "### LLM 层功能\n\n**核心能力**\n- 语言理解与生成\n- 逻辑推理\n- 世界知识\n- 上下文理解\n\n**代表模型**\n- GPT-4 / GPT-4o\n- Claude 3.5 Sonnet\n- Gemini Pro\n- LLaMA 系列\n- DeepSeek\n\n**技术特点**\n- Transformer架构\n- 预训练+微调\n- RLHF人类反馈强化学习",
+      "color": "1"
+    },
+    {
+      "id": "llm-models",
+      "type": "text",
+      "x": 500,
+      "y": 30,
+      "width": 250,
+      "height": 250,
+      "text": "### 主流LLM\n\n#### 闭源模型\n- OpenAI GPT系列\n- Anthropic Claude\n- Google Gemini\n\n#### 开源模型\n- Meta LLaMA\n- Mistral AI\n- Qwen (通义千问)\n- DeepSeek-V3\n\n**参数规模**\n- 7B ~ 100B+\n- MoE架构趋势",
+      "color": "2"
+    },
+    {
+      "id": "llm-api",
+      "type": "text",
+      "x": 780,
+      "y": 30,
+      "width": 250,
+      "height": 250,
+      "text": "### API服务层\n\n**接入方式**\n- REST API\n- WebSocket流式\n- SDK集成\n\n**关键参数**\n- Temperature (创造性)\n- Top-P / Top-K\n- Max Tokens\n- System Prompt\n\n**成本优化**\n- Token计费\n- 缓存策略\n- 批处理",
+      "color": "3"
+    },
+    {
+      "id": "llm-infra",
+      "type": "text",
+      "x": 1060,
+      "y": 30,
+      "width": 400,
+      "height": 250,
+      "text": "### 基础设施\n\n**推理平台**\n- 云端API服务\n- 本地部署 (Ollama)\n- 私有化部署\n\n**模型优化**\n- 量化 (INT4/INT8)\n- 剪枝\n- 蒸馏\n- Flash Attention\n\n**硬件加速**\n- NVIDIA GPU (H100/A100)\n- TPU / NPU\n- 分布式推理",
+      "color": "4"
+    },
+    {
+      "id": "layer-agent",
+      "type": "group",
+      "x": 100,
+      "y": 350,
+      "width": 1400,
+      "height": 350,
+      "label": "第2层: Agent (智能体框架层)",
+      "color": "2"
+    },
+    {
+      "id": "agent-desc",
+      "type": "text",
+      "x": 120,
+      "y": 380,
+      "width": 350,
+      "height": 300,
+      "text": "### Agent 层功能\n\n**核心能力**\n- 任务规划与分解\n- 工具调用 (Function Calling)\n- 自主决策\n- 多步骤推理\n- 记忆管理\n\n**工作流程**\n1. 理解用户目标\n2. 制定执行计划\n3. 调用相关工具\n4. 处理执行结果\n5. 迭代优化\n\n**代表框架**\n- LangChain / LangGraph\n- AutoGen\n- CrewAI\n- Semantic Kernel",
+      "color": "2"
+    },
+    {
+      "id": "agent-patterns",
+      "type": "text",
+      "x": 500,
+      "y": 380,
+      "width": 280,
+      "height": 300,
+      "text": "### Agent 设计模式\n\n**ReAct Pattern**\n- Reasoning (推理)\n- Acting (行动)\n- 观察循环\n\n**Multi-Agent**\n- 单Agent系统\n- 协作Agent网络\n- 层级Agent结构\n\n**记忆机制**\n- 短期记忆 (上下文)\n- 长期记忆 (向量库)\n- RAG增强\n\n**规划策略**\n- 任务分解\n- 反思优化\n- 自我修正",
+      "color": "3"
+    },
+    {
+      "id": "agent-orchestration",
+      "type": "text",
+      "x": 810,
+      "y": 380,
+      "width": 280,
+      "height": 300,
+      "text": "### 编排与协调\n\n**单Agent架构**\n```\n用户 → LLM → 工具\n         ↑         ↓\n         └──结果─────┘\n```\n\n**Multi-Agent架构**\n- 主从模式\n- 环状协作\n- 竞争机制\n\n**状态管理**\n- Conversation State\n- Tool Execution State\n- Error Recovery\n\n**监控与调试**\n- 执行轨迹追踪\n- 中间步骤可视化\n- 性能分析",
+      "color": "4"
+    },
+    {
+      "id": "agent-rag",
+      "type": "text",
+      "x": 1120,
+      "y": 380,
+      "width": 340,
+      "height": 300,
+      "text": "### RAG 增强检索\n\n**检索流程**\n1. 文档切分\n2. 向量化嵌入\n3. 向量数据库存储\n4. 语义检索\n5. 上下文注入\n\n**向量数据库**\n- Pinecone\n- Weaviate\n- Milvus\n- ChromaDB\n\n**优化策略**\n- 混合检索 (语义+关键词)\n- 重排序 (Reranking)\n- 查询改写\n- 元数据过滤\n\n**应用场景**\n- 知识库问答\n- 文档分析\n- 企业搜索",
+      "color": "5"
+    },
+    {
+      "id": "layer-tools",
+      "type": "group",
+      "x": 100,
+      "y": 750,
+      "width": 1400,
+      "height": 300,
+      "label": "第3层: Tools (工具与能力层)",
+      "color": "3"
+    },
+    {
+      "id": "tools-desc",
+      "type": "text",
+      "x": 120,
+      "y": 780,
+      "width": 320,
+      "height": 250,
+      "text": "### Tools 层功能\n\n**核心作用**\n- 扩展LLM能力边界\n- 与外部系统交互\n- 执行具体操作\n- 获取实时数据\n\n**工具类型**\n- 函数调用 (Function)\n- API接口\n- 文件操作\n- 数据库查询\n\n**定义标准**\n- 名称标识\n- 功能描述\n- 参数Schema\n- 返回值规范",
+      "color": "3"
+    },
+    {
+      "id": "tools-categories",
+      "type": "text",
+      "x": 470,
+      "y": 780,
+      "width": 300,
+      "height": 250,
+      "text": "### 工具分类\n\n**数据处理**\n- 文件读写\n- 数据库CRUD\n- 数据转换\n\n**网络服务**\n- HTTP请求\n- Webhook\n- API集成\n\n**系统操作**\n- Shell命令\n- 文件系统\n- 进程管理\n\n**专用工具**\n- 代码执行\n- 搜索引擎\n- 计算器\n- 日历/时间",
+      "color": "4"
+    },
+    {
+      "id": "tools-examples",
+      "type": "text",
+      "x": 800,
+      "y": 780,
+      "width": 280,
+      "height": 250,
+      "text": "### 常用工具示例\n\n**MCP (Model Context Protocol)**\n- 文件系统访问\n- Git操作\n- 数据库连接\n\n**开发工具**\n- 代码解释器\n- 单元测试运行\n- Linter/格式化\n\n**生产力工具**\n- 邮件发送\n- 日程管理\n- 笔记同步\n- 项目管理",
+      "color": "5"
+    },
+    {
+      "id": "tools-best",
+      "type": "text",
+      "x": 1110,
+      "y": 780,
+      "width": 350,
+      "height": 250,
+      "text": "### 工具设计最佳实践\n\n**设计原则**\n- 单一职责\n- 幂等性\n- 错误处理\n- 超时控制\n\n**参数设计**\n- 明确类型\n- 提供示例\n- 必填/可选标识\n- 默认值设置\n\n**安全考虑**\n- 权限控制\n- 输入验证\n- 敏感信息过滤\n- 操作审计\n\n**文档规范**\n- 功能描述清晰\n- 使用示例完整\n- 错误码说明",
+      "color": "6"
+    },
+    {
+      "id": "layer-skills",
+      "type": "group",
+      "x": 100,
+      "y": 1100,
+      "width": 1400,
+      "height": 350,
+      "label": "第4层: Skills (应用技能层)",
+      "color": "4"
+    },
+    {
+      "id": "skills-desc",
+      "type": "text",
+      "x": 120,
+      "y": 1130,
+      "width": 350,
+      "height": 300,
+      "text": "### Skills 层功能\n\n**核心定位**\n- 面向最终用户的技能\n- 预封装的复杂任务\n- 一键式操作体验\n- 可组合复用\n\n**与Tools区别**\n- Tools是原子能力\n- Skills是复合任务\n- Skills由多个Tools组成\n- 面向业务场景\n\n**实现方式**\n- Agent工作流封装\n- 多步骤任务编排\n- Prompt模板\n- 配置化定义",
+      "color": "4"
+    },
+    {
+      "id": "skills-types",
+      "type": "text",
+      "x": 500,
+      "y": 1130,
+      "width": 280,
+      "height": 300,
+      "text": "### 技能分类\n\n**开发技能**\n- /commit - Git提交\n- /review - 代码审查\n- /test - 运行测试\n- /build - 构建项目\n\n**写作技能**\n- /blog - 写博客\n- /summary - 生成摘要\n- /translate - 翻译\n- /format - 格式化\n\n**分析技能**\n- /analyze - 代码分析\n- /debug - 调试\n- /refactor - 重构\n- /optimize - 优化",
+      "color": "5"
+    },
+    {
+      "id": "skills-examples",
+      "type": "text",
+      "x": 810,
+      "y": 1130,
+      "width": 280,
+      "height": 300,
+      "text": "### 技能实现示例\n\n**Git Commit技能**\n1. 运行git status\n2. 运行git diff\n3. 分析变更内容\n4. 生成提交信息\n5. 执行git commit\n\n**代码审查技能**\n1. 读取PR差异\n2. 分析代码质量\n3. 检查潜在问题\n4. 提供改进建议\n5. 生成审查报告\n\n**组合调用**\n- Skills可调用其他Skills\n- 支持参数传递\n- 结果汇总",
+      "color": "6"
+    },
+    {
+      "id": "skills-user",
+      "type": "text",
+      "x": 1120,
+      "y": 1130,
+      "width": 340,
+      "height": 300,
+      "text": "### 用户自定义技能\n\n**创建流程**\n1. 定义技能名称\n2. 描述技能功能\n3. 编写执行逻辑\n4. 测试技能效果\n5. 注册到系统\n\n**配置方式**\n- YAML配置文件\n- 代码定义\n- 可视化编排\n\n**应用场景**\n- 团队特定工作流\n- 业务规则封装\n- 常用操作快捷化\n\n**管理维护**\n- 版本控制\n- 权限管理\n- 使用统计\n- 效果监控",
+      "color": "1"
+    },
+    {
+      "id": "applications",
+      "type": "group",
+      "x": 100,
+      "y": 1500,
+      "width": 1400,
+      "height": 200,
+      "label": "应用层 (实际产品)",
+      "color": "6"
+    },
+    {
+      "id": "app-list",
+      "type": "text",
+      "x": 120,
+      "y": 1530,
+      "width": 1360,
+      "height": 150,
+      "text": "### 典型应用\n\n**编程助手** - GitHub Copilot / Cursor / Claude Code | **客服机器人** - 智能问答 / 工单处理 | **数据分析** - 自动报表 / 趋势预测 | **内容创作** - 文案生成 / 摘要提取 | **办公助手** - 文档处理 / 邮件回复 | **教育辅导** - 答疑解惑 / 作业批改 | **医疗健康** - 诊断辅助 | **法律咨询** - 合同审查 | **金融分析** - 风险评估 | **科研辅助** - 文献综述",
+      "color": "6"
+    },
+    {
+      "id": "flow-note",
+      "type": "text",
+      "x": 1600,
+      "y": 0,
+      "width": 350,
+      "height": 700,
+      "text": "## 数据流向说明\n\n### 自下而上的能力构建\n\n```\nLLM层 (基础)\n   ↓ 提供推理能力\nAgent层 (编排)\n   ↓ 调度与协调\nTools层 (工具)\n   ↓ 执行具体操作\nSkills层 (技能)\n   ↓ 封装用户任务\n应用层 (产品)\n```\n\n### 关键技术点\n\n**1. LLM → Agent**\n- Function Calling机制\n- 意图识别\n- 参数提取\n\n**2. Agent → Tools**\n- 工具选择策略\n- 执行顺序规划\n- 错误恢复机制\n\n**3. Tools → Skills**\n- 多工具组合\n- 工作流编排\n- 结果聚合\n\n**4. Skills → Apps**\n- 业务逻辑封装\n- 用户界面集成\n- 多租户管理",
+      "color": "5"
+    },
+    {
+      "id": "trends",
+      "type": "text",
+      "x": 1600,
+      "y": 750,
+      "width": 350,
+      "height": 400,
+      "text": "## 技术发展趋势\n\n### 当前热点 (2025)\n\n**多模态融合**\n- 文本+图像+音频\n- 原生多模态模型\n- 跨模态理解\n\n**Agent智能化**\n- 自主规划能力提升\n- 长链路任务处理\n- 多Agent协作\n\n**工具生态**\n- MCP协议标准化\n- 工具市场形成\n- 低门槛创建\n\n**端侧部署**\n- 轻量化模型\n- 本地隐私保护\n- 离线能力\n\n### 未来方向\n\n- AGI (通用人工智能)\n- 具身智能 (机器人)\n- 自主学习与进化\n- 脑机接口融合",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "llm-desc",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e2",
+      "fromNode": "llm-desc",
+      "fromSide": "bottom",
+      "toNode": "agent-desc",
+      "toSide": "top",
+      "label": "提供推理能力",
+      "color": "1"
+    },
+    {
+      "id": "e3",
+      "fromNode": "agent-desc",
+      "fromSide": "bottom",
+      "toNode": "tools-desc",
+      "toSide": "top",
+      "label": "调用工具",
+      "color": "2"
+    },
+    {
+      "id": "e4",
+      "fromNode": "tools-desc",
+      "fromSide": "bottom",
+      "toNode": "skills-desc",
+      "toSide": "top",
+      "label": "组合成技能",
+      "color": "3"
+    },
+    {
+      "id": "e5",
+      "fromNode": "skills-desc",
+      "fromSide": "bottom",
+      "toNode": "app-list",
+      "toSide": "top",
+      "label": "封装为应用",
+      "color": "4"
+    },
+    {
+      "id": "e6",
+      "fromNode": "flow-note",
+      "fromSide": "left",
+      "toNode": "llm-infra",
+      "toSide": "right",
+      "label": "技术支持"
+    },
+    {
+      "id": "e7",
+      "fromNode": "flow-note",
+      "fromSide": "left",
+      "toNode": "agent-orchestration",
+      "toSide": "right",
+      "label": "架构设计"
+    },
+    {
+      "id": "e8",
+      "fromNode": "flow-note",
+      "fromSide": "left",
+      "toNode": "tools-best",
+      "toSide": "right",
+      "label": "最佳实践"
+    },
+    {
+      "id": "e9",
+      "fromNode": "flow-note",
+      "fromSide": "left",
+      "toNode": "skills-user",
+      "toSide": "right",
+      "label": "自定义"
+    }
+  ]
+}
