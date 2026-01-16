@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "speech_tech.md",
+                "file": "Agent Skills.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "speech_tech"
+              "title": "Agent Skills"
             }
           }
         ],
@@ -216,8 +216,12 @@
   },
   "active": "c51e0d7342b1bc82",
   "lastOpenFiles": [
-    "README.md",
     "speech_tech.md",
+    "Claude Code.md",
+    "Agent Skills.md",
+    "Agent Skills.md.tmp.63044.1768551074017",
+    "Claude Code.md.tmp.63044.1768551065625",
+    "README.md",
     "欢迎.md"
   ]
 }
